@@ -55,6 +55,7 @@ public class ModItems {
     public static Item MAX_STAND_DISC_DIVER_DOWN;
     public static Item STAND_DISC_CREAM;
     public static Item MAX_STAND_DISC_CREAM;
+    public static Item STAND_DISC_FUN_FUN_FUN;
     public static Item STAND_DISC;
     public static Item STREET_SIGN_DIO_BLOCK_ITEM;
     public static Item STREET_SIGN_RIGHT_BLOCK_ITEM;

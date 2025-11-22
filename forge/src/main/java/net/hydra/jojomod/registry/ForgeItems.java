@@ -492,6 +492,8 @@ public class ForgeItems {
     public static final RegistryObject<Item> STAND_DISC_MANDOM = addToDiscTab(ITEMS.register("mandom_disc",
             () -> new StandDiscItem(new Item.Properties().stacksTo(1), new PowersMandom(null))));
 
+
+
     public static final RegistryObject<Item> STAND_DISC_D4C = ITEMS.register("d4c_disc",
             () -> new StandDiscItem(new Item.Properties().stacksTo(1), new PowersD4C(null)));
     public static final RegistryObject<Item> MAX_STAND_DISC_D4C = ITEMS.register("max_d4c_disc",
@@ -511,6 +513,9 @@ public class ForgeItems {
             () -> new StandDiscItem(new Item.Properties().stacksTo(1), new PowersCream(null))));
     public static final RegistryObject<Item> MAX_STAND_DISC_CREAM = addToWIPTab(ITEMS.register("max_cream_disc",
             () -> new MaxStandDiscItem(new Item.Properties().stacksTo(1), new PowersCream(null))));
+
+    public static final RegistryObject<Item> STAND_DISC_FUN_FUN_FUN = addToWIPTab(ITEMS.register("fun_fun_fun_disc",
+            () -> new StandDiscItem(new Item.Properties().stacksTo(1), new PowersFunFunFun(null))));
 
     public static final RegistryObject<Item> STAND_DISC_ANUBIS = ITEMS.register("anubis_disc",
             () -> new StandDiscItem(new Item.Properties().stacksTo(1), new PowersAnubis(null)));

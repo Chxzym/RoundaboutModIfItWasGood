@@ -98,6 +98,8 @@ public class FabricItems {
             new StandDiscItem(new Item.Properties().stacksTo(1), new PowersSurvivor(null)));
     public static Item STAND_DISC_ACHTUNG = registerItem("achtung_baby_disc",
             new StandDiscItem(new Item.Properties().stacksTo(1), new PowersAchtungBaby(null)));
+    public static Item STAND_DISC_FUN_FUN_FUN = registerItem("fun_fun_fun_disc",
+            new StandDiscItem(new Item.Properties().stacksTo(1), new PowersFunFunFun(null)));
 
     public static Item STAND_DISC_DIVER_DOWN = registerItem("diver_down_disc",
             new StandDiscItem(new Item.Properties().stacksTo(1), new PowersDiverDown(null)));
@@ -108,6 +110,8 @@ public class FabricItems {
             new StandDiscItem(new Item.Properties().stacksTo(1), new PowersCream(null)));
     public static Item MAX_STAND_DISC_CREAM = registerItem("max_cream_disc",
             new MaxStandDiscItem(new Item.Properties().stacksTo(1), new PowersCream(null)));
+
+
 
     public static Item LUCK_UPGRADE = registerItem("luck_upgrade",
         new SmithingTemplateItem(SmithingTemplates.LUCK_UPGRADE_APPLIES_TO, SmithingTemplates.LUCK_UPGRADE_INGREDIENTS, SmithingTemplates.LUCK_UPGRADE, SmithingTemplates.LUCK_UPGRADE_BASE_SLOT_DESCRIPTION, SmithingTemplates.LUCK_UPGRADE_ADDITIONS_SLOT_DESCRIPTION, SmithingTemplates.createLuckUpgradeIconList(), SmithingTemplates.createLuckMatIconList())
@@ -426,6 +430,7 @@ public class FabricItems {
                         entries.accept(STAND_DISC_SURVIVOR);
                         entries.accept(STAND_DISC_HEY_YA);
                         entries.accept(STAND_DISC_MANDOM);
+                        entries.accept(STAND_DISC_FUN_FUN_FUN);
 
                     }).build());
 
@@ -450,6 +455,7 @@ public class FabricItems {
                         entries.accept(SNUBNOSE_AMMO);
                         entries.accept(STAND_DISC_CREAM);
                         entries.accept(MAX_STAND_DISC_CREAM);
+                        entries.accept(STAND_DISC_FUN_FUN_FUN);
 
 
                     }).build());

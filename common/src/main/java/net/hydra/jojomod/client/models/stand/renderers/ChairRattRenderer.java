@@ -6,6 +6,7 @@ import net.hydra.jojomod.client.models.layers.ModEntityRendererClient;
 import net.hydra.jojomod.client.models.stand.ChairRattModel;
 import net.hydra.jojomod.client.models.stand.ReddModel;
 import net.hydra.jojomod.entity.stand.ChairRattEntity;
+import net.hydra.jojomod.entity.stand.JusticeEntity;
 import net.hydra.jojomod.entity.stand.RattEntity;
 import net.hydra.jojomod.entity.stand.ReddEntity;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -42,4 +43,7 @@ public class ChairRattRenderer extends StandRenderer<ChairRattEntity> {
     protected RenderType getRenderType(ChairRattEntity entity, boolean showBody, boolean translucent, boolean showOutline) {
         return super.getRenderType(entity, showBody, true, showOutline);
     }
-}
+
+
+    }
+

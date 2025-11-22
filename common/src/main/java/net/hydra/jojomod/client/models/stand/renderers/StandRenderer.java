@@ -7,6 +7,7 @@ import net.hydra.jojomod.access.IEntityAndData;
 import net.hydra.jojomod.access.IPlayerEntity;
 import net.hydra.jojomod.client.ClientUtil;
 import net.hydra.jojomod.client.models.stand.StandModel;
+
 import net.hydra.jojomod.entity.stand.SoftAndWetEntity;
 import net.hydra.jojomod.entity.stand.StandEntity;
 import net.hydra.jojomod.event.index.PowerIndex;
@@ -32,7 +33,7 @@ import net.minecraft.world.level.LightLayer;
 import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.Nullable;
 
-public class StandRenderer<T extends StandEntity> extends MobRenderer<T, StandModel<T>> {
+public abstract class StandRenderer<T extends StandEntity> extends MobRenderer<T, StandModel<T>> {
     /**Stand renderers should all extend this, because it is used
      * to make sure stand lighting doesn't mess up when they clip through blocks.*/
     public StandRenderer(EntityRendererProvider.Context context, StandModel<T> entityModel, float f) {
@@ -177,4 +178,6 @@ public class StandRenderer<T extends StandEntity> extends MobRenderer<T, StandMo
     protected RenderType getRenderType(T entity, boolean showBody, boolean translucent, boolean showOutline) {
         return super.getRenderType(entity, showBody, true, showOutline);
     }
+
+
 }

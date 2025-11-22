@@ -32,6 +32,8 @@ import net.minecraft.world.entity.animal.Wolf;
 import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.levelgen.Heightmap;
 
+import static net.hydra.jojomod.entity.ModEntities.FUN_FUN_FUN;
+
 public class FabricEntities {
 
         public static final EntityType<TerrierEntity> TERRIER_DOG =
@@ -413,6 +415,14 @@ public class FabricEntities {
                         EntityType.Builder.of(DiverDownEntity::new, MobCategory.MISC).
                                 sized(0.75f, 2.05f).clientTrackingRange(14).build(Roundabout.MOD_ID+":diver_down")
                 );
+
+        public static final EntityType<FunFunFunEntity> FUN_FUN_FUN =
+                Registry.register(
+                        BuiltInRegistries.ENTITY_TYPE,
+                        Roundabout.location("fun_fun_fun"),
+                        EntityType.Builder.of(FunFunFunEntity::new, MobCategory.MISC).
+                                sized(0.75f, 2.05f).clientTrackingRange(14).build(Roundabout.MOD_ID+":fun_fun_fun")
+                );
         public static final EntityType<HarpoonEntity> THROWN_HARPOON =
                 Registry.register(
                         BuiltInRegistries.ENTITY_TYPE,
@@ -625,7 +635,8 @@ public class FabricEntities {
                             sized(2f, 2f).clientTrackingRange(10).build(Roundabout.MOD_ID+":road_roller_entity")
             );
 
-        public static void register() {
+
+    public static void register() {
                 /*Common Code Bridge*/
                 ModEntities.THE_WORLD = THE_WORLD;
                 ModEntities.THE_WORLD_ULTIMATE = THE_WORLD_ULTIMATE;
@@ -655,6 +666,7 @@ public class FabricEntities {
                 ModEntities.JUSTICE_PIRATE = JUSTICE_PIRATE;
                 ModEntities.DARK_MIRAGE = DARK_MIRAGE;
                 ModEntities.DIVER_DOWN = DIVER_DOWN;
+                ModEntities.FUN_FUN_FUN = FUN_FUN_FUN;
                 ModEntities.THROWN_HARPOON = THROWN_HARPOON;
                 ModEntities.BLADED_BOWLER_HAT = BLADED_BOWLER_HAT;
                 ModEntities.ROUNDABOUT_BULLET_ENTITY = ROUNDABOUT_BULLET_ENTITY;
@@ -773,6 +785,7 @@ public class FabricEntities {
                 FabricDefaultAttributeRegistry.register(CINDERELLA, StandEntity.createStandAttributes());
                 FabricDefaultAttributeRegistry.register(WALKING_HEART, StandEntity.createStandAttributes());
                 FabricDefaultAttributeRegistry.register(DIVER_DOWN, StandEntity.createStandAttributes());
+                FabricDefaultAttributeRegistry.register(FUN_FUN_FUN, StandEntity.createStandAttributes());
 
 
                 FabricDefaultAttributeRegistry.register(GROUND_HURRICANE, GroundHurricaneEntity.createStandAttributes());
