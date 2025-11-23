@@ -9,6 +9,9 @@
   "text.roundabout.warn_unnamed_trap_triggered": "A fog trap has been triggered!",
 
   "text.roundabout.out_of_bullets": "Shift right click to reload!",
+  "text.roundabout.already_reloaded": "You have already reloaded.",
+  "text.roundabout.no_more_usable_ammo": "You have no more ammunition!",
+
 
   "item.roundabout.stand_arrow": "Stand Arrow",
   "item.roundabout.stand_beetle_arrow": "Stand Arrow",
@@ -527,6 +530,7 @@
   "death.attack.blood_drain.item": "%1$s lost all color.",
   "death.attack.blood_drain.player": "%1$s lost all color.",
   "death.attack.blood_drain.player.item": "%1$s lost all color.",
+  "death.attack.bullet": "%1$s became a pin cushion.",
 
   "item.glaive.charge_power": "Charge Attack",
 
@@ -905,7 +909,9 @@
   "sounds.roundabout.jotaro_getting_closer":  "How else can I...",
   "sounds.roundabout.blood_suck":  "Blood",
   "sounds.roundabout.blood_suck_crit":  "Blood",
-  "sounds.roundabout.vampire_speed":  "Boost",
+  "sounds.roundabout.heartbeat":  "Heartbeat",
+  "sounds.roundabout.heartbeat2":  "Heartbeat",
+  "sounds.roundabout.heartbeat3":  "Heartbeat",
 
   "sounds.roundabout.aesthetician_exhale":  "Huff",
   "sounds.roundabout.female_zombie_ambient":  "Zombie Aesthetician groans",
